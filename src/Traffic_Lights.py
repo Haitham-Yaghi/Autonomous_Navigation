@@ -8,7 +8,6 @@ from sensor_msgs.msg import Range
 ARROW_LEFT = 10
 ARROW_UP = 47
 ARROW_RIGHT = 5
-WHITE_LANE = 17
 
 id = 0
 pub = None
