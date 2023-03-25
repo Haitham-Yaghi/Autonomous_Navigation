@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-# aim is to subscribe to /m2wr/laser/scan  or  use the data for obstacle avoidance or then publish a Twist message to give the bot command to move
-
 import rospy
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
