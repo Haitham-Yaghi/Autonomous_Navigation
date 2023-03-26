@@ -7,33 +7,7 @@ import numpy as np
 import math
 from geometry_msgs.msg import Twist
 
-"""
-def image_callback(msg):
-    while(True):
-        bridge = CvBridge()
-        # Convert ROS image message to OpenCV image
-        img = bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-        # Apply image processing operations
-        gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # Convert OpenCV image to ROS image message
-        gray_msg = bridge.cv2_to_imgmsg(gray_img, encoding='passthrough')
-        # Publish the processed image
-        cv2.imshow("Original Image", gray_img)
-        cv2.waitKey(1)
-        pub.publish(gray_msg)
 
-if __name__ == '__main__':
-    # Initialize the ROS node
-    rospy.init_node('image_processor')
-    # Create a subscriber to the camera topic
-    sub = rospy.Subscriber('/camera/rgb/image_raw', Image, image_callback)
-    # Create a publisher for the processed image
-    pub = rospy.Publisher('/processed_image', Image, queue_size=10)
-    # Spin the node to receive and process images
-    rospy.spin()
-"""
-#global cv_image
-# img=[]
 class LaneDetector(object):
 
     def __init__(self):
